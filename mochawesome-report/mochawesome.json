@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-09-17T17:02:09.024Z",
+    "end": "2024-09-17T17:02:09.260Z",
+    "duration": 236,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "579fd996-31be-44fc-9eec-937760c961b4",
+      "title": "",
+      "fullFile": "C:\\Users\\pc\\OneDrive\\Desktop\\QA_Tutorial\\Axios\\api-test\\get_request.js",
+      "file": "\\api-test\\get_request.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "af598aa4-7ec7-43f5-9047-3c7e506cb715",
+          "title": "Get API Request Tests",
+          "fullFile": "C:\\Users\\pc\\OneDrive\\Desktop\\QA_Tutorial\\Axios\\api-test\\get_request.js",
+          "file": "\\api-test\\get_request.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to get user list",
+              "fullTitle": "Get API Request Tests Should be able to get user list",
+              "timedOut": false,
+              "duration": 229,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const res = await axios.get(\"https://rreqres.in/api/e?pageee=2\");\n  \n// console.log(res.data);\nexpect(res.data.page).equal(1);\nexpect(res.data.per_page).equal(6);",
+              "err": {
+                "message": "Error: getaddrinfo ENOTFOUND rreqres.in",
+                "estack": "Error: getaddrinfo ENOTFOUND rreqres.in\n    at AxiosError.from (file:///C:/Users/pc/OneDrive/Desktop/QA_Tutorial/Axios/node_modules/axios/lib/core/AxiosError.js:92:14)\n    at RedirectableRequest.handleRequestError (file:///C:/Users/pc/OneDrive/Desktop/QA_Tutorial/Axios/node_modules/axios/lib/adapters/http.js:620:25)\n    at RedirectableRequest.emit (node:events:518:28)\n    at eventHandlers.<computed> (node_modules\\follow-redirects\\index.js:49:24)\n    at ClientRequest.emit (node:events:518:28)\n    at TLSSocket.socketErrorListener (node:_http_client:500:9)\n    at TLSSocket.emit (node:events:518:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (file:///C:/Users/pc/OneDrive/Desktop/QA_Tutorial/Axios/node_modules/axios/lib/core/Axios.js:45:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///C:/Users/pc/OneDrive/Desktop/QA_Tutorial/Axios/api-test/get_request.js:7:19)",
+                "diff": null
+              },
+              "uuid": "474d2c7c-4c9b-4b2e-bd47-a193e2043d74",
+              "parentUUID": "af598aa4-7ec7-43f5-9047-3c7e506cb715",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "474d2c7c-4c9b-4b2e-bd47-a193e2043d74"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 229,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.7.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
